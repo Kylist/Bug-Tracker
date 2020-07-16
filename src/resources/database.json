@@ -1,0 +1,1381 @@
+{
+    "alert": [{
+            "id": 1,
+            "name": "Alert 1 from PM",
+            "message": "this is a fake Alert #1, Have Fun",
+            "senderID": 7,
+            "receiverIDs": [1, 2, 5, 8]
+        }, {
+            "id": 2,
+            "name": "Alert 2 from developer",
+            "message": "this is a fake Alert #2, Have Fun",
+            "senderID": 1,
+            "receiverIDs": [ 3, 2, 5, 7]
+        }, {
+           "id": 3,
+            "name": "Alert 3 from tester",
+            "message": "this is a fake Alert #1, Have Fun",
+            "senderID": 3,
+            "receiverIDs": [1, 2, 5, 7, 8]
+        }, {
+             "id": 4,
+            "name": "Alert 4 from admin",
+            "message": "this is a fake Alert #1, Have Fun",
+            "senderID": 8,
+            "receiverIDs": [1, 2, 3, 4, 5, 7 ]
+        },{
+           "id": 5,
+            "name": "Alert 5 from tester",
+            "message": "this is a fake Alert #1, Have Fun",
+            "senderID": 3,
+            "receiverIDs": [1, 2, 5, 7, 8]
+        },{
+           "id": 6,
+            "name": "Alert 6 from tester",
+            "message": "this is a fake Alert #1, Have Fun",
+            "senderID": 3,
+            "receiverIDs": [1, 2, 5, 7, 8]
+        },{
+           "id": 7,
+            "name": "Alert 3 from tester",
+            "message": "this is a fake Alert #1, Have Fun",
+            "senderID": 5,
+            "receiverIDs": [1, 2, 5, 7, 8]
+        }],
+
+    "task": [{
+            "id": 1,
+            "taskType": "TASK",
+            "projectID": 1,
+            "sprintID": 1,
+            "quickSummary": "fake task #1",
+
+            "severity": 4,
+            "taskStatus": "ONNEW",
+            "dateCreated": "1-1-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake task in project 1 sprint 1, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 2,
+            "taskType": "BUGREPORT",
+            "projectID": 2,
+            "sprintID": 5,
+            "quickSummary": "bogus bug report #1",
+
+            "severity": 2,
+            "taskStatus": "ONNEW",
+            "dateCreated": "6-24-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 2 sprint 1, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 3,
+            "taskType": "BUGREPORT",
+            "projectID": 3,
+            "sprintID": 8,
+            "quickSummary": "bogus bug report #2",
+
+            "severity": 5,
+            "taskStatus": "ONGOING",
+            "dateCreated": "6-24-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 3 sprint 1, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [3, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 4,
+            "taskType": "TESTREQUEST",
+            "projectID": 4,
+            "sprintID": 11,
+            "quickSummary": "false test request #1",
+
+            "severity": 6,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "6-10-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake test request in project 1, no need to worry",
+            "assignerID": 2,
+            "assigneeIDs": [6, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 5,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 1,
+            "quickSummary": "bogus bug report #3",
+
+            "severity": 9,
+            "taskStatus": "ONREVIEW",
+            "dateCreated": "6-11-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 1, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 6,
+            "taskType": "BUGREPORT",
+            "projectID": 2,
+            "sprintID": 5,
+            "quickSummary": "bogus bug report #4",
+
+            "severity": 4,
+            "taskStatus": "ONNEW",
+            "dateCreated": "5-30-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 2 sprint 1, no need to worry",
+            "assignerID": 4,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 7,
+            "taskType": "BUGREPORT",
+            "projectID": 3,
+            "sprintID": 8,
+            "quickSummary": "false test request #2",
+
+            "severity": 2,
+            "taskStatus": "ONFINISH",
+            "dateCreated": "5-24-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [3, 4, 6, 7, 8],
+            "file": "",
+            "comment": [{
+                    "taskID": 7,
+                    "commentID": 1,
+                    "commentDate": "12-12-2020",
+                    "commenterID": 3,
+                    "taskStatus": "ONGOING",
+                    "comment": "finished the bug and make adjustment to the design"
+                }, {
+                    "taskID": 7,
+                    "commentID": 2,
+                    "commentDate": "11-11-2020",
+                    "commenterID": 6,
+                    "taskStatus": "ONREVIEW",
+                    "comment": "dev 3 need to redo this. Still find error"
+                }, {
+                    "taskID": 7,
+                    "commentID": 3,
+                    "commentDate": "10-10-2020",
+                    "commenterID": 4,
+                    "taskStatus": "ONTAKEN",
+                    "comment": "will prolly do this 2 days later"
+                }, {
+                    "taskID": 7,
+                    "commentID": 4,
+                    "commentDate": "9-9-2020",
+                    "commenterID": 6,
+                    "taskStatus": "ONNEW",
+                    "comment": "this error is extremely tough. Beware"
+                }]
+        }, {
+            "id": 8,
+            "taskType": "IMPROVEMENT",
+            "projectID": 4,
+            "sprintID": 11,
+            "quickSummary": "dummy improvement #1",
+
+            "severity": 2,
+            "taskStatus": "ONGOING",
+            "dateCreated": "5-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [2, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 9,
+            "taskType": "TESTREQUEST",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "false test request #3",
+
+            "severity": 2,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 2,
+            "assigneeIDs": [5, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 10,
+            "taskType": "TESTREQUEST",
+            "projectID": 2,
+            "sprintID": 6,
+            "quickSummary": "false test request #4",
+
+            "severity": 7,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 1,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 11,
+            "taskType": "TASK",
+            "projectID": 3,
+            "sprintID": 9,
+            "quickSummary": "fake task #2",
+
+            "severity": 8,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "5-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake task in project 3 sprint 2, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [3, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 12,
+            "taskType": "NEWFEATURE",
+            "projectID": 4,
+            "sprintID": 12,
+            "quickSummary": "charlatan new feature #1",
+
+            "severity": 8,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [2, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 13,
+            "taskType": "TESTREQUEST",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "false test request #5",
+
+            "severity": 9,
+            "taskStatus": "ONREVIEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 2,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 14,
+            "taskType": "TESTREQUEST",
+            "projectID": 2,
+            "sprintID": 6,
+            "quickSummary": "false test request #6",
+
+            "severity": 10,
+            "taskStatus": "ONGOING",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 1,
+            "assigneeIDs": [5, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 15,
+            "taskType": "BUGREPORT",
+            "projectID": 3,
+            "sprintID": 10,
+            "quickSummary": "bogus bug report #29",
+
+            "severity": 10,
+            "taskStatus": "ONFINISH",
+            "dateCreated": "4-20-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 3 sprint 3, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [3, 4, 6, 7, 8],
+            "file": "",
+            "comment": [{
+                    "taskID": 15,
+                    "commentID": 5,
+                    "commentDate": "12-12-2020",
+                    "commenterID": 4,
+                    "taskStatus": "ONGOING",
+                    "comment": "finished the bug and make adjustment to the design"
+                }, {
+                    "taskID": 15,
+                    "commentID": 6,
+                    "commentDate": "11-11-2020",
+                    "commenterID": 6,
+                    "taskStatus": "ONREVIEW",
+                    "comment": "dev 3 need to redo this. Still find error"
+                }, {
+                    "taskID": 15,
+                    "commentID": 7,
+                    "commentDate": "10-10-2020",
+                    "commenterID": 4,
+                    "taskStatus": "ONTAKEN",
+                    "comment": "will prolly do this 2 days later"
+                }, {
+                    "taskID": 15,
+                    "commentID": 8,
+                    "commentDate": "9-9-2020",
+                    "commenterID": 6,
+                    "taskStatus": "ONNEW",
+                    "comment": "this error is extremely tough. Beware"
+                }]
+        }, {
+            "id": 16,
+            "taskType": "BUGREPORT",
+            "projectID": 4,
+            "sprintID": 12,
+            "quickSummary": "bogus bug report #5",
+
+            "severity": 1,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 4 sprint 2, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [2, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 17,
+            "taskType": "IMPROVEMENT",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "dummy improvement #2",
+
+            "severity": 2,
+            "taskStatus": "ONGOING",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 18,
+            "taskType": "TASK",
+            "projectID": 2,
+            "sprintID": 6,
+            "quickSummary": "fake task #3",
+
+            "severity": 3,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake task in project 2 sprint 2, no need to worry",
+            "assignerID": 4,
+            "assigneeIDs": [1, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 19,
+            "taskType": "TASK",
+            "projectID": 1,
+            "sprintID": 1,
+            "quickSummary": "fake task #4",
+
+            "severity": 4,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake task in project 1 sprint 1, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 20,
+            "taskType": "TASK",
+            "projectID": 2,
+            "sprintID": 5,
+            "quickSummary": "fake task #5",
+
+            "severity": 5,
+            "taskStatus": "ONGOING",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake task in project 2 sprint 1, no need to worry",
+            "assignerID": 1,
+            "assigneeIDs": [4, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 21,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 3,
+            "quickSummary": "bogus bug report #6",
+
+            "severity": 7,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 3, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 22,
+            "taskType": "TESTREQUEST",
+            "projectID": 2,
+            "sprintID": 7,
+            "quickSummary": "false test request #7",
+
+            "severity": 6,
+            "taskStatus": "ONREVIEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 4,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 23,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 3,
+            "quickSummary": "bogus bug report #7",
+
+            "severity": 4,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 3, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [2, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 24,
+            "taskType": "TASK",
+            "projectID": 3,
+            "sprintID": 8,
+            "quickSummary": "fake task #6",
+
+            "severity": 6,
+            "taskStatus": "ONGOING",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake task in project 3 sprint 1, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [6, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 25,
+            "taskType": "BUGREPORT",
+            "projectID": 3,
+            "sprintID": 8,
+            "quickSummary": "bogus bug report #8",
+
+            "severity": 3,
+            "taskStatus": "ONFINISH",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 3 sprint 1, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [3, 4, 6, 7, 8],
+            "file": "",
+            "comment": [{
+                    "taskID": 25,
+                    "commentID": 9,
+                    "commentDate": "12-12-2020",
+                    "commenterID": 3,
+                    "taskStatus": "ONGOING",
+                    "comment": "finished the bug and make adjustment to the design"
+                }, {
+                    "taskID": 25,
+                    "commentID": 10,
+                    "commentDate": "11-11-2020",
+                    "commenterID": 6,
+                    "taskStatus": "ONREVIEW",
+                    "comment": "dev 3 need to redo this. Still find error"
+                }, {
+                    "taskID": 25,
+                    "commentID": 11,
+                    "commentDate": "10-10-2020",
+                    "commenterID": 4,
+                    "taskStatus": "ONTAKEN",
+                    "comment": "will prolly do this 2 days later"
+                }, {
+                    "taskID": 25,
+                    "commentID": 12,
+                    "commentDate": "9-9-2020",
+                    "commenterID": 6,
+                    "taskStatus": "ONNEW",
+                    "comment": "this error is extremely tough. Beware"
+                }]
+        }, {
+            "id": 26,
+            "taskType": "TESTREQUEST",
+            "projectID": 3,
+            "sprintID": 9,
+            "quickSummary": "false test request #8",
+
+            "severity": 3,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 4,
+            "assigneeIDs": [6, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 27,
+            "taskType": "IMPROVEMENT",
+            "projectID": 1,
+            "sprintID": 4,
+            "quickSummary": "dummy improvement #3",
+
+            "severity": 7,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 28,
+            "taskType": "TESTREQUEST",
+            "projectID": 1,
+            "sprintID": 4,
+            "quickSummary": "false test request #9",
+
+            "severity": 8,
+            "taskStatus": "ONREVIEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 1,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 29,
+            "taskType": "BUGREPORT",
+            "projectID": 3,
+            "sprintID": 8,
+            "quickSummary": "bogus bug report #9",
+
+            "severity": 8,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 1, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [3, 4, 6, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 30,
+            "taskType": "NEWFEATURE",
+            "projectID": 1,
+            "sprintID": 1,
+            "quickSummary": "charlatan new feature #2",
+
+            "severity": 9,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 2,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 31,
+            "taskType": "BUGREPORT",
+            "projectID": 3,
+            "sprintID": 8,
+            "quickSummary": "bogus bug report #10",
+
+            "severity": 10,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 1, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [3, 4, 6, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 32,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 1,
+            "quickSummary": "bogus bug report #11",
+
+            "severity": 1,
+            "taskStatus": "ONFINISH",
+            "dateCreated": "9-9-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 1, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": [{
+                    "taskID": 32,
+                    "commentID": 13,
+                    "commentDate": "11-11-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONGOING",
+                    "comment": "fixed it"
+                }, {
+                    "taskID": 32,
+                    "commentID": 14,
+                    "commentDate": "10-10-2020",
+                    "commenterID": 2,
+                    "taskStatus": "ONTAKEN",
+                    "comment": "will prolly do this 2 days later"
+                }, {
+                    "taskID": 32,
+                    "commentID": 15,
+                    "commentDate": "9-9-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONNEW",
+                    "comment": "this error is extremely easy, should not take too long"
+                }]
+        }, {
+            "id": 33,
+            "taskType": "TASK",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "fake task #7",
+
+            "severity": 2,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake task in project 1 sprint 2, no need to worry",
+            "assignerID": 1,
+            "assigneeIDs": [1, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 34,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "bogus bug report #12",
+
+            "severity": 2,
+            "taskStatus": "ONREVIEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 2, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 35,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "bogus bug report #13",
+
+            "severity": 1,
+            "taskStatus": "ONFINISH",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 2 sprint 2, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": [{
+                    "taskID": 35,
+                    "commentID": 16,
+                    "commentDate": "11-11-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONGOING",
+                    "comment": "fixed it"
+                }, {
+                    "taskID": 35,
+                    "commentID": 17,
+                    "commentDate": "10-10-2020",
+                    "commenterID": 2,
+                    "taskStatus": "ONTAKEN",
+                    "comment": "will prolly do this 2 days later"
+                }, {
+                    "taskID": 35,
+                    "commentID": 18,
+                    "commentDate": "9-9-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONNEW",
+                    "comment": "this error is extremely easy, should not take too long"
+                }]
+        }, {
+            "id": 36,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "bogus bug report #14",
+
+            "severity": 10,
+            "taskStatus": "ONFINISH",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 2, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": [{
+                    "taskID": 36,
+                    "commentID": 19,
+                    "commentDate": "11-11-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONGOING",
+                    "comment": "fixed it"
+                }, {
+                    "taskID": 36,
+                    "commentID": 20,
+                    "commentDate": "10-10-2020",
+                    "commenterID": 2,
+                    "taskStatus": "ONTAKEN",
+                    "comment": "will prolly do this 2 days later"
+                }, {
+                    "taskID": 36,
+                    "commentID": 21,
+                    "commentDate": "9-9-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONNEW",
+                    "comment": "this error is extremely easy, should not take too long"
+                }]
+        }, {
+            "id": 37,
+            "taskType": "IMPROVEMENT",
+            "projectID": 1,
+            "sprintID": 3,
+            "quickSummary": "dummy improvement #4",
+
+            "severity": 2,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 38,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 3,
+            "quickSummary": "bogus bug report #15",
+
+            "severity": 3,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 3, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 39,
+            "taskType": "TESTREQUEST",
+            "projectID": 1,
+            "sprintID": 3,
+            "quickSummary": "false test request #10",
+
+            "severity": 4,
+            "taskStatus": "ONREVIEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 1,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 40,
+            "taskType": "NEWFEATURE",
+            "projectID": 3,
+            "sprintID": 8,
+            "quickSummary": "charlatan new feature #3",
+
+            "severity": 5,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [3, 4, 6, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 41,
+            "taskType": "BUGREPORT",
+            "projectID": 3,
+            "sprintID": 9,
+            "quickSummary": "bogus bug report #16",
+
+            "severity": 4,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 2 sprint 1, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [3, 4, 6, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 42,
+            "taskType": "BUGREPORT",
+            "projectID": 2,
+            "sprintID": 5,
+            "quickSummary": "bogus bug report #17",
+
+            "severity": 5,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 2 sprint 1, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [4, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 43,
+            "taskType": "TASK",
+            "projectID": 2,
+            "sprintID": 5,
+            "quickSummary": "fake task #8",
+
+            "severity": 7,
+            "taskStatus": "ONFINISH",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake task in project 2 sprint 1, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": [{
+                    "taskID": 43,
+                    "commentID": 22,
+                    "commentDate": "11-11-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONGOING",
+                    "comment": "fixed it"
+                }, {
+                    "taskID": 43,
+                    "commentID": 23,
+                    "commentDate": "10-10-2020",
+                    "commenterID": 4,
+                    "taskStatus": "ONTAKEN",
+                    "comment": "will prolly do this 2 days later"
+                }, {
+                    "taskID": 43,
+                    "commentID": 24,
+                    "commentDate": "9-9-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONNEW",
+                    "comment": "this error is extremely easy, should not take too long"
+                }]
+        }, {
+            "id": 44,
+            "taskType": "BUGREPORT",
+            "projectID": 2,
+            "sprintID": 6,
+            "quickSummary": "bogus bug report #18",
+
+            "severity": 3,
+            "taskStatus": "ONREVIEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 2 sprint 2, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 45,
+            "taskType": "BUGREPORT",
+            "projectID": 2,
+            "sprintID": 7,
+            "quickSummary": "bogus bug report #19",
+
+            "severity": 5,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 2 sprint 3, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 46,
+            "taskType": "TESTREQUEST",
+            "projectID": 2,
+            "sprintID": 7,
+            "quickSummary": "false test request #11",
+
+            "severity": 6,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 4,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 47,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 1,
+            "quickSummary": "bogus bug report #20",
+
+            "severity": 6,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 1, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 48,
+            "taskType": "IMPROVEMENT",
+            "projectID": 1,
+            "sprintID": 1,
+            "quickSummary": "dummy improvement #5",
+
+            "severity": 8,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 49,
+            "taskType": "TESTREQUEST",
+            "projectID": 1,
+            "sprintID": 1,
+            "quickSummary": "false test request #12",
+
+            "severity": 3,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 2,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 50,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "bogus bug report #21",
+
+            "severity": 2,
+            "taskStatus": "ONFINISH",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 2, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": [{
+                    "taskID": 50,
+                    "commentID": 25,
+                    "commentDate": "11-11-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONGOING",
+                    "comment": "fixed it"
+                }, {
+                    "taskID": 50,
+                    "commentID": 26,
+                    "commentDate": "10-10-2020",
+                    "commenterID": 2,
+                    "taskStatus": "ONTAKEN",
+                    "comment": "will prolly do this 2 days later"
+                }, {
+                    "taskID": 50,
+                    "commentID": 27,
+                    "commentDate": "9-9-2020",
+                    "commenterID": 5,
+                    "taskStatus": "ONNEW",
+                    "comment": "this error is extremely easy, should not take too long"
+                }]
+        }, {
+            "id": 51,
+            "taskType": "NEWFEATURE",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "charlatan new feature #4",
+
+            "severity": 9,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 2,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 52,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 2,
+            "quickSummary": "bogus bug report #22",
+
+            "severity": 4,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 2, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 53,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 3,
+            "quickSummary": "bogus bug report #23",
+
+            "severity": 7,
+            "taskStatus": "ONREVIEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 3, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 54,
+            "taskType": "BUGREPORT",
+            "projectID": 1,
+            "sprintID": 3,
+            "quickSummary": "bogus bug report #24",
+
+            "severity": 5,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 1 sprint 3, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 2, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 55,
+            "taskType": "NEWFEATURE",
+            "projectID": 1,
+            "sprintID": 3,
+            "quickSummary": "charlatan new feature #5",
+
+            "severity": 2,
+            "taskStatus": "ONTAKEN",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [2, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 56,
+            "taskType": "BUGREPORT",
+            "projectID": 2,
+            "sprintID": 5,
+            "quickSummary": "bogus bug report #25",
+
+            "severity": 8,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 2 sprint 1, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 57,
+            "taskType": "NEWFEATURE",
+            "projectID": 2,
+            "sprintID": 5,
+            "quickSummary": "charlatan new feature #6",
+
+            "severity": 5,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a fake new feature in project 2, no need to worry",
+            "assignerID": 7,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 58,
+            "taskType": "BUGREPORT",
+            "projectID": 2,
+            "sprintID": 6,
+            "quickSummary": "bogus bug report #26",
+
+            "severity": 3,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 2 sprint 2, no need to worry",
+            "assignerID": 5,
+            "assigneeIDs": [1, 4, 5, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 59,
+            "taskType": "BUGREPORT",
+            "projectID": 3,
+            "sprintID": 9,
+            "quickSummary": "bogus bug report #27",
+
+            "severity": 6,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 3 sprint 2, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [3, 4, 6, 7, 8],
+            "file": "",
+            "comment": []
+        }, {
+            "id": 60,
+            "taskType": "BUGREPORT",
+            "projectID": 4,
+            "sprintID": 11,
+            "quickSummary": "bogus bug report #28",
+
+            "severity": 2,
+            "taskStatus": "ONNEW",
+            "dateCreated": "12-12-2020",
+            "dateDue": "12-12-2020",
+            "fullDescription": "this is just a bogus bug report in project 4 sprint 1, no need to worry",
+            "assignerID": 6,
+            "assigneeIDs": [2, 3, 6, 7, 8],
+            "file": "",
+            "comment": []
+        }],
+    "project": [{
+            "id": 1,
+            "name": "Bug Tracker",
+            "createDate": "10-10-2013",
+            "startDate": "10-10-2013",
+            "dueDate": "10-10-2013",
+            "summary": "this is a fake project #1, don't worry",
+            "_team": [1, 2, 5, 7, 8]
+        }, {
+            "id": 2,
+            "name": "Streaming Service",
+            "createDate": "10-10-2013",
+            "startDate": "10-10-2013",
+            "dueDate": "10-10-2013",
+            "summary": "this is a fake project #2, don't worry",
+            "_team": [1, 4, 5, 7, 8]
+        }, {
+            "id": 3,
+            "name": "Path Finder Víualizer",
+            "createDate": "10-10-2013",
+            "startDate": "10-10-2013",
+            "dueDate": "10-10-2013",
+            "summary": "this is a fake project #3, don't worry",
+            "_team": [3, 4, 6, 7, 8]
+        }, {
+            "id": 4,
+            "name": "Google Map API",
+            "createDate": "10-10-2013",
+            "startDate": "10-10-2013",
+            "dueDate": "10-10-2013",
+            "summary": "this is a fake project #4, don't worry",
+            "_team": [2, 3, 6, 7, 8]
+        }],
+    "board": [{
+            "boardType": "BACKLOG"
+        }, {
+            "boardType": "TAKEN"
+        }, {
+            "boardType": "ONGOING"
+        }, {
+            "boardType": "ONFINISH"
+        }],
+    "user": [{
+            "id": 1,
+            "role": "DEVELOPER",
+            "image": "resources/developer_1.png",
+            "name": "John Doe",
+            "email": "dev",
+            "password": "a",
+            "accessRange": 2,
+            "_projects": [1, 2],
+            "_tasks": []
+        }, {
+            "id": 2,
+            "role": "DEVELOPER",
+            "image": "resources/developer_2.png",
+            "name": "Baldo Stunnin",
+            "email": "tug64107@temple.edu",
+            "password": "toepowder",
+            "accessRange": 2,
+            "_projects": [1, 4],
+            "_tasks": []
+        }, {
+            "id": 3,
+            "role": "DEVELOPER",
+            "image": "resources/developer_3.png",
+            "name": "Klein Young",
+            "email": "funnywee@yahoo.com",
+            "password": "poison",
+            "accessRange": 2,
+            "_projects": [3, 4],
+            "_tasks": []
+        }, {
+            "id": 4,
+            "role": "DEVELOPER",
+            "image": "resources/developer_4.png",
+            "name": "Dunner Lumstemskin",
+            "email": "donnerL@gmail.com",
+            "password": "qweasdzxc",
+            "accessRange": 2,
+            "_projects": [2, 3],
+            "_tasks": []
+        }, {
+            "id": 5,
+            "role": "TESTER",
+            "image": "resources/tester_1.png",
+            "name": "Kevin Finn",
+            "email": "KevFin@gmail.com",
+            "password": "asd123",
+            "accessRange": 1,
+            "_projects": [1, 2],
+            "_tasks": []
+        }, {
+            "id": 6,
+            "role": "TESTER",
+            "image": "resources/tester_2.png",
+            "name": "Bard Carl",
+            "email": "hello",
+            "password": "hello",
+            "accessRange": 1,
+            "_projects": [3, 4],
+            "_tasks": []
+        }, {
+            "id": 7,
+            "role": "PROJECT_MANAGER",
+            "image": "resources/pm.png",
+            "name": "Stean Fisher",
+            "email": "steavieFi@gmail.com",
+            "password": "kull123",
+            "accessRange": 3,
+            "_projects": [1, 2, 3, 4],
+            "_tasks": []
+        }, {
+            "id": 8,
+            "role": "ADMIN",
+            "image": "resources/admin.png",
+            "name": "Annonymous Hackivity",
+            "email": "1",
+            "password": "a",
+            "accessRange": 4,
+            "_projects": [1, 2, 3, 4],
+            "_tasks": []
+        }],
+
+    "sprint": [{
+            "id": 1,
+            "name": 1,
+            "duration": "1 week",
+            "_projectID": 1
+        }, {
+            "id": 2,
+            "name": 2,
+            "duration": "1 week",
+            "_projectID": 1
+        }, {
+            "id": 3,
+            "name": 3,
+            "duration": "1 week",
+            "_projectID": 1
+        }, {
+            "id": 4,
+            "name": 4,
+            "duration": "1 week",
+            "_projectID": 1
+        }, {
+            "id": 5,
+            "name": 1,
+            "duration": "1 week",
+            "_projectID": 2
+        }, {
+            "id": 6,
+            "name": 2,
+            "duration": "1 week",
+            "_projectID": 2
+        }, {
+            "id": 7,
+            "name": 3,
+            "duration": "1 week",
+            "_projectID": 2
+        }, {
+            "id": 8,
+            "name": 1,
+            "duration": "1 week",
+            "_projectID": 3
+        }, {
+            "id": 9,
+            "name": 2,
+            "duration": "1 week",
+            "_projectID": 3
+        }, {
+            "id": 10,
+            "name": 3,
+            "duration": "1 week",
+            "_projectID": 3
+        }, {
+            "id": 11,
+            "name": 1,
+            "duration": "1 month",
+            "_projectID": 4
+        }, {
+            "id": 12,
+            "name": 2,
+            "duration": "1 month",
+            "_projectID": 4
+        }]
+}
