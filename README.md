@@ -91,7 +91,7 @@ JAR file used:
 
 
 ## Contributors
-Minh Tran, Trung Nguyen, Anh Tran
+Anh Tran, Minh Tran, Trung Nguyen
 
 
 ## License
