@@ -45,7 +45,7 @@ highlight what the apps can do for you to explore on your own.
 ## Installing and Running
 Clone the remote to your local repo
 ```
-git clone https://github.com/zahego/bug-tracker.git  
+git clone https://github.com/Kylist/Bug-Tracker.git
 ```
 open the project in your IDE of choice
 run the file 
