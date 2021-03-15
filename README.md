@@ -99,7 +99,7 @@ This project is licensed under the MIT License
 
 ## Design
 you can check out the intial design here:  
-UML diagram: https://drive.google.com/file/d/1q6iqi8hZuXaNJj5s0Y6tbExtOMd-TzOw/view?fbclid=IwAR3BAe3jTXcMc995OA0sG4f7rHAUo_qFwV-6ngOXUY46Rl6p0rjVk_gI7xo  
+  
 Prototype design: https://drive.google.com/file/d/1TeberxzXPIz4sQhlqbp-a7RetwT_WZiH/view?fbclid=IwAR355erkOt5f4L0F3Rnm_9XC1B5xtPKCADKRFGB3dG6Pfi4HMgQTinj6c-c 
 
 ## Progress
